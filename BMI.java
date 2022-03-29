@@ -12,7 +12,21 @@ public class BMI {
 
     final float BMI = weight/(height*height);
 
+    System.out.println("Weight = " + weight + " kg");
+    System.out.println("Height = " + height + " m");
     System.out.println("Your BMI is " + BMI);
 
+    String predict = "";
+
+    if(BMI < 18.5) {
+      predict = "Underweight";
+    } else if (BMI >= 18.5 && BMI < 25) {
+      predict = "Normal weight";
+    } else if (BMI >= 25 && BMI < 30) {
+      predict = "Overweight";
+    } else {
+      predict = "Obesity";
+    }
+    System.out.println("BMI Categories : " + predict);
   }
 }
