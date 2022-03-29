@@ -12,7 +12,7 @@ public class BMI {
 
     final float BMI = weight/(height*height);
 
-    System.out.println("Your BMI is " + BMI + ".");
+    System.out.println("Your BMI is " + BMI);
 
   }
 }
